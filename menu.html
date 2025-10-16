@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Menu - Brew & Beans</title>
+  <meta name='description' content='Explore our coffee menu featuring espresso, lattes, cold brews, and fresh pastries.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-[Open Sans] text-gray-800'>
+  <header>
+    <nav class='bg-white shadow-lg sticky top-0 z-50'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <div class='flex-shrink-0'>
+            <a href='index.html' class='text-2xl font-bold text-gray-800 font-[Montserrat]'>Brew & Beans</a>
+          </div>
+          <div class='hidden md:block'>
+            <div class='ml-10 flex items-baseline space-x-4'>
+              <a href='index.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>Home</a>
+              <a href='menu.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>Menu</a>
+              <a href='about.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>About</a>
+              <a href='contact.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>Contact</a>
+            </div>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-gray-800 hover:text-gray-600 focus:outline-none'>
+              <svg class='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='hidden md:hidden'>
+        <a href='index.html' class='block px-4 py-2 text-sm text-gray-700'>Home</a>
+        <a href='menu.html' class='block px-4 py-2 text-sm text-gray-700'>Menu</a>
+        <a href='about.html' class='block px-4 py-2 text-sm text-gray-700'>About</a>
+        <a href='contact.html' class='block px-4 py-2 text-sm text-gray-700'>Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class='max-w-7xl mx-auto px-4 py-12'>
+    <h1 class='font-[Montserrat] text-3xl md:text-4xl font-bold mb-6'>Our Menu</h1>
+    <section class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <!-- Espresso & Lattes -->
+      <div class='bg-white rounded-lg shadow p-6'>
+        <h2 class='font-[Montserrat] text-xl mb-3'>Espresso & Signature Drinks</h2>
+        <div class='flex items-center justify-between mb-3'>
+          <div>
+            <p class='font-[Open Sans]'>Espresso</p>
+            <p class='text-sm text-gray-500'>Rich and concentrated shot</p>
+          </div>
+          <span class='font-semibold'>$3.25</span>
+        </div>
+        <div class='flex items-center justify-between mb-3'>
+          <div>
+            <p class='font-[Open Sans]'>Cappuccino</p>
+            <p class='text-sm text-gray-500'>Espresso with steamed milk</p>
+          </div>
+          <span class='font-semibold'>$4.25</span>
+        </div>
+        <div class='flex items-center justify-between'>
+          <div>
+            <p class='font-[Open Sans]'>Latte</p>
+            <p class='text-sm text-gray-500'>Creamy milk, latte art</p>
+          </div>
+          <span class='font-semibold'>$4.50</span>
+        </div>
+      </div>
+      <!-- Pastries -->
+      <div class='bg-white rounded-lg shadow p-6'>
+        <h2 class='font-[Montserrat] text-xl mb-3'>Pastries & Snacks</h2>
+        <div class='flex items-center justify-between mb-3'>
+          <div>
+            <p class='font-[Open Sans]'>Croissant</p>
+            <p class='text-sm text-gray-500'>Flaky and buttery</p>
+          </div>
+          <span class='font-semibold'>$3.50</span>
+        </div>
+        <div class='flex items-center justify-between'>
+          <div>
+            <p class='font-[Open Sans]'>Blueberry Muffin</p>
+            <p class='text-sm text-gray-500'>Bright berries, tender crumb</p>
+          </div>
+          <span class='font-semibold'>$3.25</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div>
+          <h3 class='text-2xl font-bold mb-4'>Brew & Beans</h3>
+          <p class='text-sm text-gray-200'>Coffee, pastry, and community made fresh daily.</p>
+        </div>
+        <div>
+          <h4 class='text-lg font-semibold mb-4'>Shop</h4>
+          <ul class='space-y-2 text-sm text-gray-200'>
+            <li><a href='index.html' class='hover:text-white'>Home</a></li>
+            <li><a href='menu.html' class='hover:text-white'>Menu</a></li>
+            <li><a href='about.html' class='hover:text-white'>About</a></li>
+            <li><a href='contact.html' class='hover:text-white'>Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class='text-lg font-semibold mb-4'>Hours</h4>
+          <p class='text-sm text-gray-200'>Mon-Fri: 6:30 AM - 6:00 PM</p>
+          <p class='text-sm text-gray-200'>Sat-Sun: 7:00 AM - 5:00 PM</p>
+        </div>
+        <div>
+          <h4 class='text-lg font-semibold mb-4'>Visit</h4>
+          <p class='text-sm text-gray-200'>123 Caffeine Street</p>
+          <p class='text-sm text-gray-200'>Downtown</p>
+        </div>
+      </div>
+      <hr class='border-gray-600 my-8 opacity-50'>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <p class='text-sm text-gray-400'>© 2025 Brew & Beans. All rights reserved.</p>
+        <p class='text-sm text-gray-400'>Made with care for our community</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const panel = document.getElementById('mobile-menu');
+    if (btn && panel) btn.addEventListener('click', () => panel.classList.toggle('hidden'));
+
+    document.querySelectorAll('section, main, footer').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transition = 'opacity 600ms ease-in-out';
+    });
+    window.addEventListener('load', () => {
+      document.querySelectorAll('section, main, footer').forEach((el, idx) => {
+        setTimeout(() => { el.style.opacity = '1'; }, idx * 120);
+      });
+    });
+  </script>
+</body>
+</html>
